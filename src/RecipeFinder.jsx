@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SearchBar from "./SearchBar";
+import RecipeModal from "./RecipeModal";
 
 export default function RecipeFinder(){
      const [searchTerm, setSearchTerm] = useState("");
@@ -20,7 +21,16 @@ export default function RecipeFinder(){
                <h1>Search for a recipe!</h1>
                <p>This is a mini aplication where you can search for a recipe 🥘</p>
             </div>
+            <div className="recepie-list">
+                {recipes && recipes.map(recipe => (
+                 <div key={recipe.idMeal} onClick={()=>{setSelectedRecipe(recipe)}}>
+                    <h3>{recipe.strMeal}</h3>
+                    <img src={recipe.strMealThumb} alt={recipe.strMeal} width="100" />
+                </div>)
+                )}
+            </div>
             <SearchBar searchRecipes={searchRecipes} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+            <RecipeModal recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)}/>
         </div>
     )
 }
