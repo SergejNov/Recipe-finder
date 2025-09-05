@@ -18,16 +18,17 @@ export default function RecipeFinder(){
 
     return(
         <div className="main-card">
-            <div>
-               <h1>Search for a recipe!</h1>
+            <div className="search-card">
+               <h1 className="srarch-h1">Search for a recipe!</h1>
                <p>This is a mini aplication where you can search for a recipe 🥘</p>
-            </div>
+            
             <SearchBar searchRecipes={searchRecipes} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+            </div>
             <div className="recepie-list">
                 {recipes && recipes.map(recipe => (
-                 <div key={recipe.idMeal} onClick={()=>{setSelectedRecipe(recipe)}}>
-                    <h3>{recipe.strMeal}</h3>
-                    <img src={recipe.strMealThumb} alt={recipe.strMeal} width="100" />
+                 <div className="meal-card" key={recipe.idMeal} onClick={()=>{setSelectedRecipe(recipe)}}>
+                    <h3 className="meal-name">{recipe.strMeal}</h3>
+                    <img className="meal-img" src={recipe.strMealThumb} alt={recipe.strMeal} width="100" />
                 </div>)
                 )}
             </div>

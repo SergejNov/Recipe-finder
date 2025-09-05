@@ -1,4 +1,4 @@
-
+import "./SearchBar.css";
 
 export default function SearchBar({ searchTerm, setSearchTerm, searchRecipes }){
 
@@ -6,8 +6,8 @@ export default function SearchBar({ searchTerm, setSearchTerm, searchRecipes }){
     setSearchTerm(e.target.value);
 }
 
-    return <div>
-                <input type="text" value={searchTerm} onChange={handleInputChange}/>
-                <button onClick={searchRecipes}>🔍</button>
+    return <div className="search-bar">
+                <input className="search-input" type="text" value={searchTerm} onChange={handleInputChange}/>
+                <button className="search-button" onClick={searchRecipes}>🔍</button>
             </div>
 }

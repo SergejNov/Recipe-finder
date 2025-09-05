@@ -18,8 +18,32 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("https://wallpapercat.com/w/full/3/b/e/974450-1920x1080-desktop-1080p-vincent-van-gogh-wallpaper-image.jpg")
 
+   /* background: 
+        linear-gradient(135deg, #d96131 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, #ecf0f1 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, #d96131 25%, transparent 25%),
+        linear-gradient(45deg, #ecf0f1 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #f08787; */
+
+
+   /* background-color: #FF7E2E;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='550' height='66' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23D63D1C' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
+  
+   
+
+   background: linear-gradient(-45deg, #ed7b58, #f03737, #ffee71, #82ed71);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+
+}
+
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 h1 {

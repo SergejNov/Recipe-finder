@@ -1,0 +1,32 @@
+.search-bar {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  overflow: hidden;
+  background: white;
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.search-button {
+  padding: 15px 20px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.search-button:hover {
+  background: #ee5a52;
+}

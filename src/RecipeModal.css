@@ -1,4 +1,4 @@
-
+/* 
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -19,4 +19,73 @@
   max-width: 500px;
   max-height: 80vh;
   overflow-y: auto;
+} */
+ 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-card {
+  background: white;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.modal-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.modal-instructions {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.modal-close {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+  transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+  background: #ee5a52;
 }
