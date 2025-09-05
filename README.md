@@ -16,17 +16,17 @@ A simple React application that allows users to search for recipes by keywords a
 - Fetch API for retrieving data  
 
 ## How to Run
-Clone the repository: git clone https://github.com/your-username/recipe-finder.git
+Clone the repository: ("git clone https://github.com/your-username/recipe-finder.git")
    
 Navigate to the project folder:
-cd recipe-finder
+("cd recipe-finder")
 
 Install dependencies:
-npm install
+("npm install")
 
 Start the development server:
-npm run dev
+("npm run dev")
 
-Open in your browser: http://localhost:5173
+Open in your browser: ("http://localhost:5173")
 
 Made using React.
