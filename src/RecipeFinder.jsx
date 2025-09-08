@@ -17,6 +17,7 @@ export default function RecipeFinder(){
  
 
     return(
+    <div className="app-card">
         <div className="main-card">
             <div className="search-card">
                <h1 className="srarch-h1">Search for a recipe!</h1>
@@ -34,5 +35,6 @@ export default function RecipeFinder(){
             </div>
             <RecipeModal recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)}/>
         </div>
+    </div>
     )
 }

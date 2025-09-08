@@ -6,6 +6,7 @@
   border-radius: 50px;
   overflow: hidden;
   background: white;
+  border: solid #ff6b6b 3px;
 }
 
 .search-input {
